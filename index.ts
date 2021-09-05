@@ -8,7 +8,9 @@ require("dotenv").config();
 import { getCurrentSession, getProducts, setNextState } from "./handlers";
 import { Session } from "./models/session";
 import { storeStateValidator } from "./utils/validators";
-mongoose.connect("mongodb://localhost:27017/whatsapp");
+mongoose.connect(
+  "mongodb+srv://user:uvOyX5UA6I2mjplk@cluster0.azmit.mongodb.net/NUCLEUS?retryWrites=true&w=majority"
+);
 mongoose.connection.on("error", (err) => {
   console.log("err", err);
 });
