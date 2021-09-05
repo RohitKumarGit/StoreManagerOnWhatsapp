@@ -9,7 +9,7 @@ import { getCurrentSession, getProducts, setNextState } from "./handlers";
 import { Session } from "./models/session";
 import { storeStateValidator } from "./utils/validators";
 mongoose.connect(
-  "mongodb+srv://user:uvOyX5UA6I2mjplk@cluster0.azmit.mongodb.net/NUCLEUS?retryWrites=true&w=majority"
+  "mongodb+srv://user:xtXE0mmcC7GmhZrM@cluster0.begc9.mongodb.net/twitterClone?retryWrites=true&w=majority"
 );
 mongoose.connection.on("error", (err) => {
   console.log("err", err);
