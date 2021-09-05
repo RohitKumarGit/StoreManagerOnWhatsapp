@@ -200,8 +200,8 @@ app.post("/sms", function (req, res) { return __awaiter(void 0, void 0, void 0, 
         }
     });
 }); });
-app.listen(4000, function (err) {
+app.listen(process.env.PORT, function (err) {
     if (!err) {
-        console.log("server is running at ", 4000);
+        console.log("server is running at ", process.env.PORT);
     }
 });
