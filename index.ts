@@ -139,8 +139,8 @@ app.post("/sms", async (req: any, res: any) => {
     res.status(500).send(JSON.stringify(error));
   }
 });
-app.listen(4000, function (err: any) {
+app.listen(process.env.PORT, function (err: any) {
   if (!err) {
-    console.log("server is running at ", 4000);
+    console.log("server is running at ", process.env.PORT);
   }
 });
